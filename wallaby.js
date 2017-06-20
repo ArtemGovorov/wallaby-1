@@ -4,6 +4,7 @@ var path = require('path');
 var compilerOptions = Object.assign(
   require('./tsconfig.json').compilerOptions,
   require('./src/tsconfig.spec.json').compilerOptions);
+compilerOptions.noEmitOnError = false;
 
 module.exports = function (wallaby) {
 
